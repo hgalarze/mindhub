@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Contact</title>
+	<link rel="stylesheet" href="./assets/styles/styles.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Mighty Ducks Hockey League</h1>
+		<h2>Contact</h2>
+		<img src="./assets/img/Logo_Mighty_ducks-01.png" alt="Logo Mighty Ducks Hockey League" />
+	</header>
+
+	<main class="contact">
+		<div>
+			<nav>
+				<a class="section" href="./index.html">Home</a>
+				<a class="section" href="./about.html">About MDHL</a>
+				<a class="section" href="rules.html">Rules</a>
+				<a class="section" href="game_information.html">Game Information</a>
+				<a class="section" href="contact.html">Contact</a>
+				<div class="section">Registration</div>
+			</nav>
+		</div>
+		<div>
+			<form id="registration-form" action="show_data.html" method="GET">
+				<h2 class="registration-form-title">Registration Form</h2>
+				<table id="registration-form-data">
+					<tr>
+						<td>
+							<label class="form-input-label">Player's First Name:</label>
+							<span class="form-text-input">
+								<input id="firstName" name="firstName" type="text" />
+							</span>
+						</td>
+						<td>
+							<label class="form-input-label">Last Name:</label>
+							<span class="form-text-input">
+								<input id="lastName" name="lastName" type="text" />
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label class="form-input-label">Street Address:</label>
+							<span class="form-text-input">
+								<input id="streetAddress" name="streetAddress" type="text" />
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="form-input-label">City:</label>
+							<span class="form-text-input">
+								<input id="city" name="city" type="text" />
+							</span>
+						</td>
+						<td>
+							<label class="form-input-label">Zip Code:</label>
+							<span class="form-text-input">
+								<input id="zipCode" name="zipCode" type="text" />
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="form-input-label">Birth Date(mm/dd/yyyy):</label>
+							<span class="form-text-input">
+								<input id="birthdate" name="birthdate" type="date" />
+							</span>
+						</td>
+						<td>
+							<label>Gender:</label>
+							<label id="famele-label" for="gender-famele">Famele</label>
+							<input id="gender-famele" name="gender" type="radio" />
+							<label id="male-label" for="gender-male">Male</label>
+							<input id="gender-male" name="gender" type="radio" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label class="form-input-label">Grade:</label>
+							<!-- Pre School Grade -->
+							<input id="pre-school" name="grade" type="radio" />
+							<label id="pre-school-label" for="pre-school">Pre-School</label>
+							<!-- 1st Grade -->
+							<input id="firsth-grade" name="grade" type="radio" />
+							<label id="firsth-grade-label" for="firsth-grade">
+								<sup>1st</sup>
+							</label>
+							<!-- 2nd Grade -->
+							<input id="second-grade" name="grade" type="radio" />
+							<label id="second-grade-label" for="second-grade">
+								<sup>2nd</sup>
+							</label>
+							<!-- 3rd Grade -->
+							<input id="third-grade" name="grade" type="radio" />
+							<label id="third-grade-label" for="third-grade">
+								<sup>3rd</sup>
+							</label>
+							<!-- 4th Grade -->
+							<input id="fourth-grade" name="grade" type="radio" />
+							<label id="fourth-grade-label" for="fourth-grade">
+								<sup>4th</sup>
+							</label>
+							<!-- 5th Grade -->
+							<input id="fifth-grade" name="grade" type="radio" />
+							<label id="fifth-grade-label" for="fifth-grade">
+								<sup>5th</sup>
+							</label>
+						</td>
+					</tr>
+				</table>
+				<div class="registration-form-choices">
+					<h3 class="registration-form-section-title">Which elementary school do you live near?</h3>
+					<table>
+						<tr>
+							<td colspan="2">
+								<h4 class="registration-form-section-subtitle">Closest School:</h4>
+							</td>
+						</tr>
+						<tr>
+							<td class="justify-choice">
+								<input id="near-school-1st" name="school" type="radio" />
+								<label id="near-school-1st-label" for="near-school-1st">AJ Katzenmaier</label>
+							</td>
+							<td class="justify-choice">
+								<input id="near-school-2nd" name="school" type="radio" />
+								<label id="near-school-2nd-label" for="near-school-2nd">Marjorie P Hart</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="justify-choice">
+								<input id="near-school-3th" name="school" type="radio" />
+								<label id="near-school-3th-label" for="near-school-3th">Greenbay</label>
+							</td>
+							<td class="justify-choice">
+								<input id="near-school-4th" name="school" type="radio" />
+								<label id="near-school-4th-label" for="near-school-4th">North Elementary</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="justify-choice">
+								<input id="near-school-5th" name="school" type="radio" />
+								<label id="near-school-5th-label" for="near-school-5th">Howard A Yeager</label>
+							</td>
+							<td class="justify-choice">
+								<input id="near-school-6th" name="school" type="radio" />
+								<label id="near-school-6th-label" for="near-school-6th">South Elementary</label>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="registration-form-choices">
+					<h3 class="registration-form-section-title">What position(s) do you normally play? (check all that
+						apply)
+					</h3>
+					<table>
+						<tr>
+							<td class="justify-choice">
+								<input id="position-forward" name="position" type="checkbox" />
+								<label id="position-forward-label" for="position-forward">Forward</label>
+							</td>
+							<td class="justify-choice">
+								<input id="position-midfield" name="position" type="checkbox" />
+								<label id="position-midfield-label" for="position-midfield">Midfield</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="justify-choice">
+								<input id="position-defence" name="position" type="checkbox" />
+								<label id="position-defence-label" for="position-defence">Defence</label>
+							</td>
+							<td class="justify-choice">
+								<input id="position-goalkeeper" name="position" type="checkbox" />
+								<label id="position-goalkeeper-label" for="position-goalkeeper">Goalkeeper</label>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="registration-form-choices">
+					<h3 class="registration-form-section-title">Uniform Size:</h3>
+					<table>
+						<tr>
+							<td class="justify-choice">
+								<input id="uniform-youth-small" name="uniform" type="radio" />
+								<label id="uniform-youth-small-label" for="uniform-youth-small">Youth Small</label>
+							</td>
+							<td class="justify-choice">
+								<input id="uniform-medium" name="uniform" type="radio" />
+								<label id="uniform-medium-label" for="uniform-medium">Medium</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="justify-choice">
+								<input id="uniform-youth-medium" name="uniform" type="radio" />
+								<label id="uniform-youth-medium-label" for="uniform-youth-medium">Youth Medium</label>
+							</td>
+							<td class="justify-choice">
+								<input id="uniform-large" name="uniform" type="radio" />
+								<label id="uniform-large-label" for="uniform-large">Large</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="justify-choice">
+								<input id="uniform-youth-large" name="uniform" type="radio" />
+								<label id="uniform-youth-large-label" for="uniform-youth-large">Youth Large</label>
+							</td>
+							<td class="justify-choice">
+								<input id="uniform-extra-large" name="uniform" type="radio" />
+								<label id="uniform-extra-large-label" for="uniform-extra-large">Extra-Large</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="justify-choice">
+								<input id="uniform-small" name="uniform" type="radio" />
+								<label id="uniform-small-label" for="uniform-small">Small</label>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="registration-form-choices">
+					<h3 class="registration-form-section-title">Permission to Play</h3>
+					<table>
+						<tr>
+							<td>
+								<p>I, the parent or guardian of the minor registrant, agree that the registrant and I
+									will abide
+									by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the
+									possibility of
+									physical injury associated with hockey and in consideration for the "League"
+									accepting the
+									registrant for its hockey programs and activities, 1 hereby release, discharge,
+									and/or
+									otherwise indemnify MDHL, their employees and associated personnel and
+									volunteers,including
+									the facilities used for practices and games, against any claim by or on behalf of
+									the
+									registrant as a result of the registrant's participation in the programand/orbeing
+									transportad to or from MDHL sponsored activities, which transportation
+									By signing below, 1 herebyagree andauthorizethe above.ln addition, by signing below,
+									lalso
+									acknowledge that I have read the cancellation policy and agree to its terms.</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="permission-block">
+								<label class="form-input-label">Parent/Guardian Signature:</label>
+								<span class="form-text-input">
+									<input id="signature" name="signature" type="text" />
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="permission-block">
+								<label class="form-input-label">Date:</label>
+								<span class="form-text-input">
+									<input id="form-date" name="form-date" type="date" />
+								</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="content-centered">
+					<button id="registrarion-button" type="submit">Send</button>
+				</div>
+			</form>
+		</div>
+	</main>
+</body>
+
+</html>

@@ -1,67 +1,173 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
 h1 {
-    vertical-align: top;
-    font-size: 4rem;
-    background: url("../img/design1_image1.jpg") center no-repeat;
-    min-height: 8vh;
-    padding: 0 0 5rem 0;
+	vertical-align: top;
+	font-size: 4rem;
+	background: url("../img/design1_image1.jpg") center no-repeat;
+	min-height: 8vh;
+	padding: 0 0 5rem 0;
 }
 
 header>h2 {
-    min-height: 4rem;
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-    background: #000;
-    padding: 0.50rem;
+	min-height: 4rem;
+	color: white;
+	text-align: center;
+	font-size: 3rem;
+	background: #000;
+	padding: 0.50rem;
 }
 
 header img {
-    background-color: white;
-    width: 10rem;
-    margin: -7.5rem 0 0 80vw;
-    border-radius: 0.5rem;
-    border: red solid;
+	background-color: white;
+	width: 10rem;
+	margin: -7.5rem 0 0 80vw;
+	border-radius: 0.5rem;
+	border: red solid;
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.474);
-    width: 100%;
+	background-color: rgba(255, 255, 255, 0.474);
+	width: 100%;
 }
 
-nav>a {
-    display: block;
-    padding: 1rem 2rem;
+nav>.section {
+	display: block;
+	padding: 1rem 2rem;
 }
 
 
 nav>a:hover {
-    background-color: white;
+	background-color: white;
 }
 
 main>div,
 main>section {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 85vw;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 85vw;
 }
 
 .index,
 .about,
+.rules,
+.game_information,
 .contact {
-    max-width: 100%;
-    background-image: url("../img/hockey_1.jpg");
+	max-width: 100%;
 }
 
 article,
 div>p {
-    padding: 1%;
-    background-color: rgba(255, 255, 255, 0.43);
+	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.43);
+}
+
+#play-calendar th:nth-col(1) {
+	width: 97
+}
+
+#play-calendar th:nth-col(2) {
+	width: 90
+}
+
+#play-calendar th:nth-col(3) {
+	width: 153
+}
+
+#play-calendar th:nth-col(4) {
+	width: 150
+}
+
+/* Styles for registration page */
+
+.registration-form-title {
+	text-align: center;
+	font-size: 40px;
+}
+
+#registration-form {
+	padding: 1% 5%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+#registration-form-data {
+	width: 100%;
+	padding: 20px 0px;
+	border-spacing: 20px;
+}
+
+.form-text-input {
+	display: block;
+	overflow: hidden;
+}
+
+.form-text-input input[type=text],
+.form-text-input input[type=date] {
+	border: none;
+	border-bottom: 2px solid #000000;
+	width: 100%;
+}
+
+.form-input-label {
+	float: left;
+	padding-right: 5px;
+}
+
+.registration-form-section-title,
+.registration-form-section-subtitle {
+	padding-bottom: 10px;
+}
+
+.justify-choice {
+	padding: 5px 40px 5px 0px;
+}
+
+.registration-form-choices {
+	margin-bottom: 20px;
+}
+
+.permission-block {
+	padding: 10px 0px;
+}
+
+.content-centered {
+	text-align: center;
+}
+
+#registrarion-button {
+	width: 80px;
+	height: 40px;
+}
+
+/* Map Card */
+.map-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 10px;
+	border: 1px solid #AAAAAA;
+	border-radius: 0.5rem;
+}
+
+.map-card-footer {
+	text-align: center;
+	background-color: #f6f6f6;
+	border-radius: 0 0 0.5rem 0.5rem;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	border-top: 1px solid #d8d8d8;
+}
+
+.map-card iframe {
+	border-radius: 0.5rem 0.5rem 0 0;
+	width: 300px;
+	height: 300px;
+	border: 0;
 }
