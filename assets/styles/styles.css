@@ -57,7 +57,8 @@ main>section {
 .about,
 .rules,
 .game_information,
-.contact {
+.contact,
+.registration {
 	max-width: 100%;
 }
 
